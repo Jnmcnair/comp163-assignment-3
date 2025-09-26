@@ -1,3 +1,4 @@
+#Ai was used in line 61 and 64 to help with the logical and membership operators and making sure the elif statements made sense but rest of logic is developed inderpendently
 student_name = "Jonathan McNair"
 current_gpa = 3.7
 study_hours = 7
@@ -68,7 +69,7 @@ if study_choice in study_options:
         print("Invalid")
         
 graduation = input("Do you want to graduate? (yes/no): ")
-        
+#AI was used here to help with understanding is and is not statements and used for minor debugging help with nested if/else statements      
 if type(graduation) is str and graduation is not None:
     if current_gpa >= 3.5:
         if stress_level < 40:

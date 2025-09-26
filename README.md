@@ -18,4 +18,8 @@ The different endings represent the different outcomes that can come after you'v
 
 Any AI assistance used during development
 
+<<<<<<< HEAD
 I used AI mainly for clarification on the instructions given for the assignment as they were hard to understand. I also used it for debugging and trying to figure out how identity operators work. I specifically used AI to understand the different between is not and != for the final test case.
+=======
+I used AI mainly for clarification on the instructions given for the assignment as they were hard to understand. I also used it for debugging and trying to figure out how identity operators work. I specifically used AI to understand the different between is not and != for the final test case.
+>>>>>>> 3ce9f2cd8be2a56b999b500b88665121aad99ea9
