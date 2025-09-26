@@ -43,3 +43,60 @@ else:
     print("Invalid choice. Please select A, B, or C.")
     
 
+study_options = ["Programming", "Math", "English", "History"]
+print(f"The study options are: {study_options}")
+print("Chose what you want to study: ")
+study_choice = input("Study decision: ")
+
+if study_choice in study_options:
+    if study_choice == "Programming":
+        current_gpa += 0.3
+        social_points -= 15
+        print("Well done you know what a print statement is")
+    elif study_choice == "Math":
+        current_gpa += 0.4
+        social_points -= 20
+        print("congrats you know how to add 2 and 2 together")
+    elif study_choice == "English" and current_gpa >= 3.0:
+        social_points += 12
+        print("congrats you can read this")
+    elif study_choice == "History" or (study_choice == "English" and current_gpa < 3.0):
+        current_gpa += 0.2
+        social_points += 8
+        print("congrats you know what happened 5 minutes ago")
+    elif study_choice not in study_options:
+        print("Invalid")
+        
+graduation = input("Do you want to graduate? (yes/no): ")
+        
+if type(graduation) is str and graduation is not None:
+    if current_gpa >= 3.5:
+        if stress_level < 40:
+            ending = "You graduate with honors and a little bit of stress"
+        else:
+            ending = "You graduate with honors, but you need therapy"
+    elif current_gpa >= 2.0:
+        if social_points >= 50 and study_hours > 20:
+            ending = "You graduate successfully with some good time management skills"
+        elif social_points < 20 or stress_level > 70:
+            ending = "You barely graduate and I dont blame you, take some time off champ"
+        else:
+            ending = "You graduate now have fun"
+    else:
+        if stress_level > 80:
+            ending = "You get so cooked by stress you drop out"
+        else:
+            ending = "Your GPA was too low you couldnt graduate"
+    
+    print("End of the game")
+    print(ending)
+    print()
+    print("Final Stats:")
+    print("Student Name:", student_name)
+    print("GPA:", current_gpa)
+    print("Study Hours:", study_hours)
+    print("Social Points:", social_points)
+    print("Stress Level:", stress_level)
+
+else:
+    print("Invalid input for graduation decision.")
