@@ -42,28 +42,4 @@ elif user_choice == "C":
 else:
     print("Invalid choice. Please select A, B, or C.")
     
-study_options = ["Programming", "Math", "English", "History"]
-print(f"The study options are: {study_options}")
-print("Chose what you want to study: ")
-study_choice = input("Study decision: ")
 
-if study_choice in study_options:
-    if study_choice == "Programming":
-        current_gpa += 0.3
-        social_points -= 15
-        print("Well done you know what a print statement is")
-    elif study_choice == "Math":
-        current_gpa += 0.4
-        social_points -= 20
-        print("congrats you know how to add 2 and 2 together")
-    elif study_choice == "English" and current_gpa >= 3.0:
-        social_points += 12
-        print("congrats you can read this")
-    elif study_choice == "History" or (study_choice == "English" and current_gpa < 3.0):
-        current_gpa += 0.2
-        social_points += 8
-        print("congrats you know what happened 5 minutes ago")
-    elif study_choice not in study_options:
-        print("Invalid")
-
-    
